@@ -1,44 +1,22 @@
 #include "pch.h"
-#include "GameComponent.h"
+#include "GameException.h"
 
 namespace Library
 {
-	RTTI_DEFINITIONS(GameComponent)
-
-		GameComponent::GameComponent(Game& game) :
-		mGame(&game)
+	GameException::GameException(const char* const message, HRESULT hr) :
+		runtime_error(message), mHR(hr)
 	{
 	}
 
-	Game* GameComponent::GetGame()
+	HRESULT GameException::HR() const
 	{
-		return mGame;
+		return mHR;
 	}
 
-	void GameComponent::SetGame(Game& game)
+	std::wstring GameException::whatw() const
 	{
-		mGame = gsl::not_null<Game*>(&game);
-	}
-
-	bool GameComponent::Enabled() const
-	{
-		return mEnabled;
-	}
-
-	void GameComponent::SetEnabled(bool enabled)
-	{
-		mEnabled = enabled;
-	}
-
-	void GameComponent::Initialize()
-	{
-	}
-
-	void GameComponent::Shutdown()
-	{
-	}
-
-	void GameComponent::Update(const GameTime&)
-	{
+		std::wstringstream whatw;
+		whatw << what();
+		return whatw.str();
 	}
 }

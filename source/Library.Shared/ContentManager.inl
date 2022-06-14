@@ -26,7 +26,7 @@ namespace Library
 			auto it = mLoadedAssets.find(assetName);
 			if (it != mLoadedAssets.end())
 			{
-				return static_pointer_cast<T>(it->second);
+				return std::static_pointer_cast<T>(it->second);
 			}
 		}
 
@@ -35,6 +35,6 @@ namespace Library
 		auto asset = (customReader != nullptr ? customReader(pathName) : ReadAsset(targetTypeId, pathName));
 		mLoadedAssets[assetName] = asset;
 
-		return static_pointer_cast<T>(asset);
+		return std::static_pointer_cast<T>(asset);
 	}
 }

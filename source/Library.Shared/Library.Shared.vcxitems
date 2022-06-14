@@ -64,12 +64,15 @@
     <None Include="$(MSBuildThisFileDirectory)vec4.inl" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ContentManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ContentTypeReader.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)ContentTypeReaderManager.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)DirectXHelper.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)DrawableGameComponent.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)FpsComponent.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Game.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)GameClock.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)GameComponent.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)GameTime.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)KeyboardComponent.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Mesh.cpp" />
