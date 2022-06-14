@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Raytracer", "..\source\Raytracer\Raytracer.vcxproj", "{907AF300-F152-42B2-B89C-11E6F1EE90BF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Library.Shared", "..\source\Library.Shared\Library.Shared.vcxitems", "{6BA8E9B2-217E-416A-92E4-0805C1D74C80}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Rasterizer", "..\source\Rasterizer\Rasterizer.vcxproj", "{F95BA628-307A-4810-81DA-B091E8326A6F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{907AF300-F152-42B2-B89C-11E6F1EE90BF}.Debug|x64.ActiveCfg = Debug|x64
+		{907AF300-F152-42B2-B89C-11E6F1EE90BF}.Debug|x64.Build.0 = Debug|x64
+		{907AF300-F152-42B2-B89C-11E6F1EE90BF}.Debug|x86.ActiveCfg = Debug|Win32
+		{907AF300-F152-42B2-B89C-11E6F1EE90BF}.Debug|x86.Build.0 = Debug|Win32
+		{907AF300-F152-42B2-B89C-11E6F1EE90BF}.Release|x64.ActiveCfg = Release|x64
+		{907AF300-F152-42B2-B89C-11E6F1EE90BF}.Release|x64.Build.0 = Release|x64
+		{907AF300-F152-42B2-B89C-11E6F1EE90BF}.Release|x86.ActiveCfg = Release|Win32
+		{907AF300-F152-42B2-B89C-11E6F1EE90BF}.Release|x86.Build.0 = Release|Win32
+		{F95BA628-307A-4810-81DA-B091E8326A6F}.Debug|x64.ActiveCfg = Debug|x64
+		{F95BA628-307A-4810-81DA-B091E8326A6F}.Debug|x64.Build.0 = Debug|x64
+		{F95BA628-307A-4810-81DA-B091E8326A6F}.Debug|x86.ActiveCfg = Debug|Win32
+		{F95BA628-307A-4810-81DA-B091E8326A6F}.Debug|x86.Build.0 = Debug|Win32
+		{F95BA628-307A-4810-81DA-B091E8326A6F}.Release|x64.ActiveCfg = Release|x64
+		{F95BA628-307A-4810-81DA-B091E8326A6F}.Release|x64.Build.0 = Release|x64
+		{F95BA628-307A-4810-81DA-B091E8326A6F}.Release|x86.ActiveCfg = Release|Win32
+		{F95BA628-307A-4810-81DA-B091E8326A6F}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D0616A67-B468-42EE-8F1F-B241300CB7D0}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		..\source\Library.Shared\Library.Shared.vcxitems*{6ba8e9b2-217e-416a-92e4-0805c1d74c80}*SharedItemsImports = 9
+		..\source\Library.Shared\Library.Shared.vcxitems*{907af300-f152-42b2-b89c-11e6f1ee90bf}*SharedItemsImports = 4
+		..\source\Library.Shared\Library.Shared.vcxitems*{f95ba628-307a-4810-81da-b091e8326a6f}*SharedItemsImports = 4
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{6ba8e9b2-217e-416a-92e4-0805c1d74c80}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ContentManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ContentTypeReader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ContentTypeReaderManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)DirectXHelper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)FpsComponent.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Game.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)GameClock.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)GameComponent.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)GameException.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)GameTime.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)DrawableGameComponent.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)KeyboardComponent.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Mesh.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Model.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ModelMaterial.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ModelReader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)pch.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)PixelShader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)PixelShaderReader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Point.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ray.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Rectangle.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)RenderTarget.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)RTTI.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ServiceContainer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Shader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)StreamHelper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)StringHelper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Texture.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Texture2D.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Texture2DReader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)TextureCube.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)TextureCubeReader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)TextureHelper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Utility.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)vec4.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)VertexShader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)VertexShaderReader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)ContentManager.inl" />
+    <None Include="$(MSBuildThisFileDirectory)ContentTypeReader.inl" />
+    <None Include="$(MSBuildThisFileDirectory)Game.inl" />
+    <None Include="$(MSBuildThisFileDirectory)Point.inl" />
+    <None Include="$(MSBuildThisFileDirectory)ray.inl" />
+    <None Include="$(MSBuildThisFileDirectory)Rectangle.inl" />
+    <None Include="$(MSBuildThisFileDirectory)Texture.inl" />
+    <None Include="$(MSBuildThisFileDirectory)vec4.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ContentTypeReaderManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)DirectXHelper.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)DrawableGameComponent.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)FpsComponent.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Game.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)GameClock.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)GameTime.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)KeyboardComponent.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Mesh.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Model.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ModelMaterial.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ModelReader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)PixelShader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)PixelShaderReader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Point.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Rectangle.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)RenderTarget.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ServiceContainer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)GameException.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Shader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)StreamHelper.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)StringHelper.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Texture.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Texture2D.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Texture2DReader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)TextureCube.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)TextureCubeReader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)TextureHelper.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Utility.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)VertexShader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)VertexShaderReader.cpp" />
+  </ItemGroup>
+</Project>
